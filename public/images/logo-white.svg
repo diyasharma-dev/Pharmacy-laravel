@@ -1,46 +1,84 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 90" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 84" fill="none">
   <defs>
-    <linearGradient id="shieldWhiteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="rspRedGradWhite" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF4D54" />
+      <stop offset="50%" stop-color="#C1272D" />
+      <stop offset="100%" stop-color="#9E1B21" />
+    </linearGradient>
+    <linearGradient id="rspShieldWhite" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#1A4FA0" />
       <stop offset="100%" stop-color="#0B2F5C" />
     </linearGradient>
-    <linearGradient id="accentWhiteGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#E0353B" />
-      <stop offset="100%" stop-color="#C1272D" />
-    </linearGradient>
+    <filter id="rspShadowWhite" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000000" flood-opacity="0.35" />
+    </filter>
   </defs>
 
-  <!-- Left Icon Emblem -->
-  <g transform="translate(10, 8)">
-    <rect width="74" height="74" rx="20" fill="url(#shieldWhiteGrad)" stroke="#FFFFFF" stroke-opacity="0.25" stroke-width="2" />
+  <!-- Left Icon: Modernized Apothecary Mortar & Pestle for Dark BG -->
+  <g transform="translate(6, 6)" filter="url(#rspShadowWhite)">
+    <!-- Base Rounded Shield in Royal Blue #1A4FA0 -->
+    <rect width="72" height="72" rx="20" fill="url(#rspShieldWhite)" />
+    <rect x="1" y="1" width="70" height="70" rx="19" stroke="#ffffff" stroke-opacity="0.3" stroke-width="1.5" />
     
-    <!-- Medical Cross -->
-    <rect x="33" y="15" width="8" height="22" rx="3" fill="url(#accentWhiteGrad)" />
-    <rect x="26" y="22" width="22" height="8" rx="3" fill="url(#accentWhiteGrad)" />
-    
-    <!-- Rx Text -->
-    <text x="37" y="60" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="900" font-size="24" fill="#FFFFFF" letter-spacing="-0.5">Rx</text>
+    <!-- Outer Glow Ring -->
+    <circle cx="36" cy="36" r="31" stroke="#93C5FD" stroke-width="1" stroke-dasharray="3 3" opacity="0.3" />
+
+    <!-- Pestle (Angled at 24deg with Crimson Accent) -->
+    <g transform="rotate(24 36 36)">
+      <path d="M33 13 C33 10, 39 10, 39 13 L38 29 L34 29 Z" fill="url(#rspRedGradWhite)" />
+      <ellipse cx="36" cy="12" rx="3.5" ry="2" fill="#FFFFFF" opacity="0.9" />
+    </g>
+
+    <!-- Mortar Bowl (Pure White) -->
+    <path d="M20 28 C20 28, 20 48, 36 48 C52 48, 52 28, 52 28 C48 30, 24 30, 20 28 Z" fill="#FFFFFF" />
+    <!-- Mortar Rim Lip -->
+    <path d="M18 28 C18 26.5, 23 25.5, 36 25.5 C49 25.5, 54 26.5, 54 28 C54 29.5, 49 30.5, 36 30.5 C23 30.5, 18 29.5, 18 28 Z" fill="#E8F0FE" />
+    <!-- Mortar Stand Base -->
+    <path d="M29 48 L27 53 C27 54, 45 54, 45 53 L43 48 Z" fill="#E8F0FE" />
+
+    <!-- Inside Mortar: Medical Cross -->
+    <g transform="translate(36, 38)">
+      <rect x="-1.5" y="-5.5" width="3" height="11" rx="1" fill="url(#rspRedGradWhite)" />
+      <rect x="-5.5" y="-1.5" width="11" height="3" rx="1" fill="url(#rspRedGradWhite)" />
+      <circle cx="0" cy="0" r="1.5" fill="#FFFFFF" />
+    </g>
+
+    <!-- Pharmacy "Rx" Badge at Bottom Right of Emblem -->
+    <circle cx="56" cy="56" r="11" fill="url(#rspRedGradWhite)" stroke="#FFFFFF" stroke-width="2" />
+    <text x="56" y="60.5" text-anchor="middle" font-family="'Inter', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="10.5" fill="#FFFFFF" letter-spacing="-0.5">℞</text>
   </g>
 
-  <!-- Brand Typography -->
-  <g transform="translate(98, 14)">
-    <!-- Primary Name -->
-    <text x="0" y="30" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="800" font-size="25" fill="#FFFFFF" letter-spacing="-0.5">
-      R &amp; S <tspan fill="#E0353B">PIONEER</tspan>
-    </text>
+  <!-- Brand Typography for Dark Navy Backgrounds -->
+  <g transform="translate(90, 8)">
     
-    <!-- Subtitle -->
-    <text x="1" y="49" font-family="'Inter', sans-serif" font-weight="700" font-size="12" fill="#93C5FD" letter-spacing="3.8">
+    <!-- Row 1: "R & S" in Crimson Red + "PIONEER" in Crisp White -->
+    <g transform="translate(0, 31)">
+      <text x="0" y="0" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="900" font-size="30" fill="url(#rspRedGradWhite)" letter-spacing="-1">
+        R&amp;S
+      </text>
+
+      <!-- Vertical Divider Accent -->
+      <rect x="74" y="-22" width="2" height="25" rx="1" fill="#FFFFFF" opacity="0.3" />
+
+      <!-- "PIONEER" in Solid White -->
+      <text x="86" y="0" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="800" font-size="28" fill="#FFFFFF" letter-spacing="-0.3">
+        PIONEER
+      </text>
+    </g>
+
+    <!-- Row 2: "PHARMACY" Wide-Tracked in Light Blue #93C5FD -->
+    <text x="2" y="47" font-family="'Inter', sans-serif" font-weight="800" font-size="11.5" fill="#93C5FD" letter-spacing="4.8">
       PHARMACY
     </text>
 
-    <!-- Tagline & Est. -->
-    <g transform="translate(1, 57)">
-      <rect width="180" height="15" rx="4" fill="#FFFFFF" fill-opacity="0.12" />
-      <circle cx="8" cy="7.5" r="2.5" fill="#E0353B" />
-      <text x="16" y="11" font-family="'Inter', sans-serif" font-weight="600" font-size="8.5" fill="#E8F0FE" letter-spacing="0.5">
-        SERVING BRONX SINCE 2006 • 20 YEARS
+    <!-- Row 3: Trust Pill Badge -->
+    <g transform="translate(2, 54)">
+      <rect width="216" height="16" rx="8" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.2)" stroke-width="0.8" />
+      <circle cx="10" cy="8" r="3" fill="#10B981" />
+      <text x="18" y="11.5" font-family="'Inter', sans-serif" font-weight="700" font-size="8" fill="#FFFFFF" letter-spacing="0.8">
+        WE CARE ABOUT YOU • EST. 2006
       </text>
     </g>
+
   </g>
 </svg>

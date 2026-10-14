@@ -4,11 +4,11 @@
 @section('meta_description', 'Visit R & S Pioneer Pharmacy at 1018 Ogden Ave, Bronx NY 10452. Open 7 days a week. Call 718-538-8183 for refills, free delivery, or questions.')
 
 @section('content')
-<!-- Page Header Banner (Goldberger Dark Elevated Style) -->
-<section class="bg-gradient-gray text-white py-16 lg:py-24 relative overflow-hidden border-b border-white/10">
+<!-- Page Header Banner (Demo Navy Gradient Style) -->
+<section class="bg-gradient-to-b from-[#0B2F5C] to-[#071E3C] text-white py-16 lg:py-24 relative overflow-hidden border-b border-[#0B2F5C]/20">
     <div class="max-w-screen-xl mx-auto px-5 sm:px-10 relative z-10">
         <div class="max-w-3xl space-y-5">
-            <div class="inline-flex items-center gap-2 bg-crimson px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-white shadow-sm">
+            <div class="inline-flex items-center gap-2 bg-[#C1272D] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-white shadow-sm">
                 Open 7 Days a Week &bull; Highbridge Bronx
             </div>
             <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold font-display tracking-tight text-white leading-tight">
@@ -43,16 +43,16 @@
             <!-- Left Contact Cards -->
             <div class="lg:col-span-5 space-y-6">
                 
-                <!-- Contact Info Card (Goldberger Dark Elevated Container) -->
-                <div class="bg-gradient-gray text-white rounded-3xl p-8 sm:p-10 space-y-6 shadow-2xl border border-white/10">
+                <!-- Contact Info Card (Deep Navy Container) -->
+                <div class="bg-gradient-to-b from-[#0B2F5C] to-[#071E3C] text-white rounded-3xl p-8 sm:p-10 space-y-6 shadow-2xl border border-white/10">
                     <div>
-                        <span class="text-xs font-bold uppercase tracking-wider text-crimson">Direct Contact</span>
+                        <span class="text-xs font-bold uppercase tracking-wider text-[#C1272D]">Direct Contact</span>
                         <h2 class="text-2xl sm:text-3xl font-bold font-display text-white mt-1">Get In Touch</h2>
                     </div>
 
                     <div class="space-y-4 text-sm">
                         <div class="flex items-start gap-4">
-                            <div class="w-11 h-11 rounded-2xl bg-white/10 flex items-center justify-center text-crimson shrink-0 shadow-sm">
+                            <div class="w-11 h-11 rounded-2xl bg-white/10 flex items-center justify-center text-[#C1272D] shrink-0 shadow-sm">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                             </div>
                             <div>
@@ -63,7 +63,7 @@
                         </div>
 
                         <div class="flex items-start gap-4">
-                            <div class="w-11 h-11 rounded-2xl bg-white/10 flex items-center justify-center text-crimson shrink-0 shadow-sm">
+                            <div class="w-11 h-11 rounded-2xl bg-white/10 flex items-center justify-center text-[#C1272D] shrink-0 shadow-sm">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                             </div>
                             <div>
@@ -74,7 +74,7 @@
                         </div>
 
                         <div class="flex items-start gap-4">
-                            <div class="w-11 h-11 rounded-2xl bg-white/10 flex items-center justify-center text-crimson shrink-0 shadow-sm">
+                            <div class="w-11 h-11 rounded-2xl bg-white/10 flex items-center justify-center text-[#C1272D] shrink-0 shadow-sm">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"></path></svg>
                             </div>
                             <div>
@@ -104,7 +104,7 @@
                 </div>
 
                 <!-- Google Verified Reviews Strip -->
-                <div class="bg-[#F2F2F2] rounded-3xl p-7 border border-slate-200 shadow-sm flex items-center justify-between">
+                <div class="bg-[#F8FAFC] rounded-3xl p-7 border border-[#0B2F5C]/10 shadow-sm flex items-center justify-between">
                     <div>
                         <div class="flex items-center gap-1.5 text-amber-500 font-extrabold text-lg">
                             <span>★ 4.5</span>
@@ -112,7 +112,7 @@
                         </div>
                         <div class="text-xs text-slate-600 mt-1">Read reviews from our Highbridge Bronx neighbors</div>
                     </div>
-                    <a href="https://www.google.com/maps?q=1018+Ogden+Ave+Bronx+NY+10452" target="_blank" rel="noopener" class="text-xs font-bold text-crimson hover:underline">
+                    <a href="https://www.google.com/maps?q=1018+Ogden+Ave+Bronx+NY+10452" target="_blank" rel="noopener" class="text-xs font-bold text-[#0B2F5C] hover:text-[#C1272D] hover:underline">
                         View on Maps &rarr;
                     </a>
                 </div>
@@ -130,7 +130,7 @@
                 <!-- Contact Form Card (Goldberger Deep Diffuse Shadow) -->
                 <div style="box-shadow: 6px 5px 60px 15px rgba(60,60,60,0.08)" class="bg-white rounded-3xl border border-slate-100 p-8 sm:p-14 space-y-7">
                     <div>
-                        <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-crimson">Ask a Pharmacist</span>
+                        <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#C1272D]">Ask a Pharmacist</span>
                         <h2 class="text-2xl sm:text-4xl font-bold font-display text-slate-900 mt-1">Send Us a Message</h2>
                         <p class="text-xs sm:text-sm text-slate-500 mt-1.5 leading-relaxed">
                             Have a question about medication availability, prior authorizations, delivery, or general wellness? Fill in your details below.
@@ -144,13 +144,13 @@
                             <div>
                                 <label for="name" class="block text-xs font-bold text-slate-700 mb-1.5">Your Full Name *</label>
                                 <input type="text" name="name" id="name" required value="{{ old('name') }}"
-                                    class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-crimson focus:ring-2 focus:ring-crimson/15 outline-none text-sm transition"
+                                    class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition"
                                     placeholder="Your Name">
                             </div>
                             <div>
                                 <label for="phone" class="block text-xs font-bold text-slate-700 mb-1.5">Phone Number *</label>
                                 <input type="tel" name="phone" id="phone" required value="{{ old('phone') }}"
-                                    class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-crimson focus:ring-2 focus:ring-crimson/15 outline-none text-sm transition"
+                                    class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition"
                                     placeholder="(718) 555-0123">
                             </div>
                         </div>
@@ -159,13 +159,13 @@
                             <div>
                                 <label for="email" class="block text-xs font-bold text-slate-700 mb-1.5">Email Address (Optional)</label>
                                 <input type="email" name="email" id="email" value="{{ old('email') }}"
-                                    class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-crimson focus:ring-2 focus:ring-crimson/15 outline-none text-sm transition"
+                                    class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition"
                                     placeholder="you@example.com">
                             </div>
                             <div>
                                 <label for="subject" class="block text-xs font-bold text-slate-700 mb-1.5">Inquiry Subject</label>
                                 <select name="subject" id="subject"
-                                    class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-crimson focus:ring-2 focus:ring-crimson/15 outline-none text-sm transition bg-white">
+                                    class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition bg-white">
                                     <option value="General Question">General Question</option>
                                     <option value="Prescription Refill / Transfer">Prescription Refill / Transfer</option>
                                     <option value="Dis-Pill Blister Packaging">Dis-Pill Blister Packaging</option>
@@ -179,12 +179,12 @@
                         <div>
                             <label for="message" class="block text-xs font-bold text-slate-700 mb-1.5">Your Message or Question *</label>
                             <textarea name="message" id="message" rows="4" required
-                                class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-crimson focus:ring-2 focus:ring-crimson/15 outline-none text-sm transition leading-relaxed"
+                                class="w-full px-4 py-3 rounded-2xl border border-slate-200 focus:border-[#0B2F5C] focus:ring-2 focus:ring-[#0B2F5C]/15 outline-none text-sm transition leading-relaxed"
                                 placeholder="How can our pharmacy team assist you today?">{{ old('message') }}</textarea>
                         </div>
 
                         <div>
-                            <button type="submit" class="rounded-full bg-crimson hover:bg-crimson-dark text-white font-bold text-sm px-9 h-13 inline-flex items-center gap-3 shadow-md hover:scale-105 transition cursor-pointer">
+                            <button type="submit" class="rounded-full bg-[#0B2F5C] hover:bg-[#071E3C] text-white font-bold text-sm px-9 h-13 inline-flex items-center gap-3 shadow-md hover:scale-105 transition cursor-pointer">
                                 <span>Send Message to Pharmacist</span>
                                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                             </button>
@@ -196,7 +196,7 @@
                 <div style="box-shadow: 6px 5px 60px 15px rgba(60,60,60,0.08)" class="bg-white rounded-3xl p-7 border border-slate-100 space-y-4">
                     <div class="flex items-center justify-between">
                         <h3 class="font-bold text-slate-900 text-sm uppercase tracking-wider">Store Location Map</h3>
-                        <a href="https://www.google.com/maps?q=1018+Ogden+Ave+Bronx+NY+10452" target="_blank" rel="noopener" class="text-xs text-crimson font-bold hover:underline">
+                        <a href="https://www.google.com/maps?q=1018+Ogden+Ave+Bronx+NY+10452" target="_blank" rel="noopener" class="text-xs text-[#0B2F5C] font-bold hover:text-[#C1272D] hover:underline">
                             Open in Google Maps &rarr;
                         </a>
                     </div>

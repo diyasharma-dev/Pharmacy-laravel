@@ -4,20 +4,20 @@
 @section('meta_description', 'Walk-in flu shots, COVID-19 boosters, Shingrix, RSV, and pneumonia vaccines at R & S Pioneer Pharmacy in South Bronx. No appointment needed. Free $0 copay with most insurance.')
 
 @section('content')
-<!-- Page Header Banner (Goldberger Dark Elevated Style) -->
-<section class="bg-gradient-gray text-white py-16 lg:py-24 relative overflow-hidden border-b border-white/10">
+<!-- Page Header Banner (Elevated Navy Style) -->
+<section class="bg-gradient-to-b from-[#0B2F5C] to-[#071E3C] text-white py-16 lg:py-24 relative overflow-hidden border-b border-white/10">
     <div class="max-w-screen-xl mx-auto px-5 sm:px-10 relative z-10">
         <div class="max-w-3xl space-y-5">
-            <div class="inline-flex items-center gap-2 bg-crimson px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-white shadow-sm">
+            <div class="inline-flex items-center gap-2 bg-[#C1272D] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-white shadow-sm">
                 Walk-In Immunization Center &bull; Highbridge Bronx
             </div>
             <h1 class="text-3xl sm:text-5xl lg:text-6xl font-bold font-display tracking-tight text-white leading-tight">
                 Walk-In Vaccinations. <br>
-                <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-100 to-amber-200">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-[#E8F0FE] to-amber-200">
                     No Appointment Ever Needed.
                 </span>
             </h1>
-            <p class="text-base sm:text-lg text-slate-300 leading-relaxed font-sans">
+            <p class="text-base sm:text-lg text-[#E8F0FE] leading-relaxed font-sans">
                 Protect yourself and your loved ones quickly and comfortably. Just walk into our pharmacy at 1018 Ogden Ave anytime Monday through Friday from 10:00 AM to 6:00 PM.
             </p>
         </div>
@@ -25,20 +25,20 @@
 </section>
 
 <!-- Walk-In Quick Callout Bar (Clean Alert Strip) -->
-<section class="bg-[#F2F2F2] border-b border-slate-200 py-5 px-5 sm:px-10">
+<section class="bg-[#F8FAFC] border-b border-[#0B2F5C]/10 py-5 px-5 sm:px-10">
     <div class="max-w-screen-xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
         <div class="flex items-center gap-4">
-            <div class="w-11 h-11 rounded-full bg-crimson text-white flex items-center justify-center font-bold text-lg shrink-0 shadow">
+            <div class="w-11 h-11 rounded-full bg-[#C1272D] text-white flex items-center justify-center font-bold text-lg shrink-0 shadow">
                 ✓
             </div>
             <div>
-                <h3 class="font-bold text-slate-900 text-base">Ready for Your Shot Today?</h3>
+                <h3 class="font-bold text-[#0B2F5C] text-base">Ready for Your Shot Today?</h3>
                 <p class="text-xs sm:text-sm text-slate-600">No waiting in clinic lines. Fast, gentle administration by certified Bronx pharmacists.</p>
             </div>
         </div>
         <div class="flex items-center gap-4 text-xs sm:text-sm font-semibold">
             <span class="text-slate-700">🕒 <strong>Walk-In Hours:</strong> Mon–Fri 10am–6pm</span>
-            <a href="tel:7185388183" class="rounded-full bg-black hover:bg-slate-800 text-white px-6 py-2.5 font-bold transition shadow-sm">
+            <a href="tel:7185388183" class="rounded-full bg-[#0B2F5C] hover:bg-[#071E3C] text-white px-6 py-2.5 font-bold transition shadow-sm">
                 Call: (718) 538-8183
             </a>
         </div>
@@ -290,12 +290,12 @@
                     </div>
                 </div>
 
-                <div class="p-6 rounded-3xl bg-gradient-gray text-white space-y-4 shadow-xl border border-white/10">
+                <div class="p-6 rounded-3xl bg-gradient-to-b from-[#0B2F5C] to-[#071E3C] text-white space-y-4 shadow-xl border border-white/10">
                     <h4 class="font-bold text-base">Questions Before You Stop By?</h4>
-                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                    <p class="text-xs sm:text-sm text-slate-200 leading-relaxed">
                         Give Pharmacist Kunal Shah and our team a quick call to check real-time vaccine stock or ask questions about drug interactions.
                     </p>
-                    <a href="tel:7185388183" class="w-full text-center inline-flex items-center justify-center gap-2 rounded-full bg-crimson hover:bg-crimson-dark text-white font-bold text-sm h-11 transition shadow">
+                    <a href="tel:7185388183" class="w-full text-center inline-flex items-center justify-center gap-2 rounded-full bg-[#C1272D] hover:bg-[#A81E23] text-white font-bold text-sm h-11 transition shadow">
                         <span>Call (718) 538-8183</span>
                     </a>
                 </div>
@@ -304,36 +304,36 @@
             <!-- Right: Common Vaccine FAQs -->
             <div class="lg:col-span-7 space-y-6">
                 <div>
-                    <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-royal">Frequently Asked Questions</span>
-                    <h3 class="text-2xl sm:text-3xl font-bold font-display text-slate-900 mt-1">
+                    <span class="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#1A4FA0]">Frequently Asked Questions</span>
+                    <h3 class="text-2xl sm:text-3xl font-bold font-display text-[#0B2F5C] mt-1">
                         Vaccination FAQs
                     </h3>
                 </div>
 
                 <div class="space-y-4">
                     <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-2">
-                        <h4 class="font-bold text-slate-900 text-base">Do I really not need an appointment?</h4>
+                        <h4 class="font-bold text-[#0B2F5C] text-base">Do I really not need an appointment?</h4>
                         <p class="text-slate-600 leading-relaxed text-sm">
                             Yes! Unlike large hospital clinics or doctors' offices where you have to book weeks in advance, R &amp; S Pioneer is a true walk-in vaccination center. You can walk in anytime Monday through Friday from 10:00 AM to 6:00 PM.
                         </p>
                     </div>
 
                     <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-2">
-                        <h4 class="font-bold text-slate-900 text-base">Will my insurance cover the cost?</h4>
+                        <h4 class="font-bold text-[#0B2F5C] text-base">Will my insurance cover the cost?</h4>
                         <p class="text-slate-600 leading-relaxed text-sm">
                             In nearly all cases, yes! Under the Affordable Care Act and the Inflation Reduction Act, routine advisory vaccines (Flu, COVID-19, Shingles, RSV, Pneumonia) are covered with a <strong>$0 copay</strong> through Medicare Part B/D, New York Medicaid, and most commercial insurance plans.
                         </p>
                     </div>
 
                     <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-2">
-                        <h4 class="font-bold text-slate-900 text-base">Can I get multiple vaccines at the same time?</h4>
+                        <h4 class="font-bold text-[#0B2F5C] text-base">Can I get multiple vaccines at the same time?</h4>
                         <p class="text-slate-600 leading-relaxed text-sm">
                             Yes. The CDC confirms it is safe and effective to receive your annual flu shot and COVID-19 booster during the same visit (one in each arm). Our pharmacist will consult with you to determine the ideal schedule for your health profile.
                         </p>
                     </div>
 
                     <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm space-y-2">
-                        <h4 class="font-bold text-slate-900 text-base">Do you administer travel vaccines (Yellow Fever, Typhoid)?</h4>
+                        <h4 class="font-bold text-[#0B2F5C] text-base">Do you administer travel vaccines (Yellow Fever, Typhoid)?</h4>
                         <p class="text-slate-600 leading-relaxed text-sm">
                             At this time, we focus on standard adult, senior, and respiratory immunizations (Flu, COVID, Shingles, RSV, Pneumonia). We do not stock specialized international travel vaccines.
                         </p>
@@ -345,22 +345,22 @@
     </div>
 </section>
 
-<!-- Bottom Full Red CTA Strip (Goldberger Style) -->
-<div class="flex w-full bg-crimson py-16 lg:py-24 text-white">
+<!-- Bottom Full Navy CTA Strip (Demo Site Style) -->
+<div class="flex w-full bg-[#0B2F5C] py-16 lg:py-24 text-white">
     <div class="max-w-screen-xl mx-auto px-5 sm:px-10 text-center space-y-6">
-        <h3 class="text-white/80 font-bold text-sm tracking-wider uppercase">No Appointment Needed</h3>
+        <h3 class="text-[#E8F0FE] font-bold text-sm tracking-wider uppercase">No Appointment Needed</h3>
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold font-display text-white">
             Walk In Today for Your Immunization
         </h2>
-        <p class="max-w-2xl mx-auto text-white/95 text-base leading-relaxed">
+        <p class="max-w-2xl mx-auto text-slate-200 text-base leading-relaxed">
             Visit 1018 Ogden Ave, Bronx NY 10452. Open weekdays 10 AM to 6 PM for walk-ins. We accept all major insurances with $0 copay.
         </p>
         <div class="pt-2 flex flex-wrap justify-center gap-4">
-            <a href="tel:7185388183" class="rounded-full bg-white text-slate-900 font-semibold px-8 h-12 inline-flex items-center gap-3 text-sm hover:bg-slate-100 transition shadow hover:scale-105">
+            <a href="tel:7185388183" class="rounded-full bg-white text-[#0B2F5C] font-bold px-8 h-12 inline-flex items-center gap-3 text-sm hover:bg-[#E8F0FE] transition shadow hover:scale-105">
                 <span>Call (718) 538-8183</span>
                 <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
-            <a href="{{ route('home') }}" class="rounded-full border border-white text-white font-semibold px-8 h-12 inline-flex items-center gap-3 text-sm hover:bg-white hover:text-crimson transition shadow">
+            <a href="{{ route('home') }}" class="rounded-full border border-white text-white font-bold px-8 h-12 inline-flex items-center gap-3 text-sm hover:bg-white hover:text-[#0B2F5C] transition shadow">
                 <span>Back to Home</span>
             </a>
         </div>
