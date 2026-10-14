@@ -4,121 +4,184 @@
 @section('meta_description', "Established in 2006, R & S Pioneer Pharmacy has been serving the South Bronx community for 20 years. Walk-in vaccines, Dis-Pill blister packing, DMV eye exams, and free delivery.")
 
 @section('content')
-<!-- Hero Section (Photographic Background with Left Elevated Navy Gradient Box & 4 Circular Badges) -->
-<div class="relative flex min-h-[85vh] lg:min-h-[92vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.90), rgba(7, 30, 60, 0.82)), url('{{ asset('images/hero-bg.jpg') }}');">
-    <div class="max-w-screen-xl mx-auto px-5 md:px-10 py-16 lg:py-24 mt-auto w-full pb-48 lg:pb-56">
+<!-- Hero Section (Goldberger-Inspired Layout: Photographic Background, Left Elevated Navy Card, Desktop Floating Proof, & 4 Circular Badges) -->
+<div class="relative flex min-h-[88vh] lg:min-h-[94vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" 
+     style="background-image: linear-gradient(to right, rgba(7, 30, 60, 0.88) 0%, rgba(7, 30, 60, 0.60) 52%, rgba(7, 30, 60, 0.22) 100%), url('{{ asset('images/hero-bg.jpg') }}');">
+    
+    <div class="max-w-screen-xl mx-auto px-5 md:px-10 py-12 lg:py-20 mt-auto w-full flex items-end justify-between relative z-10 !pb-0">
         
-        <!-- Elevated Navy Gradient Card -->
-        <section class="w-fit rounded-t-2xl bg-gradient-to-b from-[#0B2F5C]/90 to-[#071E3C]/95 p-6 sm:p-10 lg:p-14 border-t border-l border-r border-white/20 shadow-2xl backdrop-blur-md">
-            <div class="flex w-fit flex-col gap-6 max-w-2xl">
+        <!-- Left: Elevated Navy Gradient Card (Goldberger Elevated Format) -->
+        <section class="w-full lg:max-w-2xl rounded-t-3xl bg-gradient-to-b from-[#0B2F5C]/95 via-[#071E3C]/95 to-[#071E3C]/98 p-6 sm:p-10 lg:p-12 border-t border-l border-r border-white/20 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.6)] backdrop-blur-xl relative z-10 pb-36 sm:pb-44 lg:pb-52">
+            <div class="flex flex-col gap-5 sm:gap-6">
                 
                 <!-- 20-Year Milestone Pill Badge -->
-                <div class="inline-flex items-center gap-2 bg-[#C1272D] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-white shadow-sm w-fit">
-                    Established 2006 &bull; Celebrating 20 Years
+                <div class="inline-flex items-center gap-2 bg-[#C1272D] px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider text-white shadow-md w-fit">
+                    <span class="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                    <span>Established 2006 &bull; Celebrating 20 Years</span>
                 </div>
 
                 <!-- Headline (Goldberger Format) -->
-                <h1 class="whitespace-break-spaces text-3xl sm:text-5xl lg:text-6xl font-bold font-display leading-[1.08] text-white">
+                <h1 class="text-3xl sm:text-5xl lg:text-[54px] font-extrabold font-display leading-[1.06] tracking-tight text-white">
                     <span class="block">Your Trusted</span>
-                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-white via-[#E8F0FE] to-amber-200">
+                    <span class="block text-transparent bg-clip-text bg-gradient-to-r from-white via-[#E8F0FE] to-sky-200">
                         Pharmacy Since 2006
                     </span>
                 </h1>
 
                 <!-- Subtitle -->
-                <p class="whitespace-break-spaces text-slate-200 text-sm sm:text-base leading-relaxed">
-                    From prescription refills and walk-in vaccinations to expert pharmacist advice and fast free delivery, trust us to manage your health with care and convenience. <b>We care about you!</b>
+                <p class="text-slate-200 text-sm sm:text-base leading-relaxed font-sans max-w-xl">
+                    From prescription refills and walk-in vaccinations to Dis-Pill blister packaging and fast free delivery across Highbridge, trust our family to care for yours. <strong class="text-white font-semibold">We care about you!</strong>
                 </p>
 
-                <!-- 4 Circular Badges (Exact Row) -->
-                <div class="flex flex-wrap gap-6 sm:gap-8 font-bold pt-2">
+                <!-- Dual Action Hero Buttons -->
+                <div class="flex flex-wrap items-center gap-3 pt-1">
+                    <a href="tel:7185388183" class="inline-flex items-center gap-2 bg-[#C1272D] hover:bg-[#a51d22] text-white px-6 sm:px-7 py-3 rounded-full font-bold text-xs sm:text-sm shadow-xl hover:shadow-2xl hover:scale-105 transition-all cursor-pointer">
+                        <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                        <span>Call (718) 538-8183</span>
+                    </a>
+                    <a href="{{ route('transfer') }}" class="inline-flex items-center gap-2 bg-white hover:bg-slate-100 text-[#0B2F5C] px-5 sm:px-6 py-3 rounded-full font-bold text-xs sm:text-sm shadow-md hover:scale-105 transition-all">
+                        <span>Transfer Prescription</span>
+                        <svg class="w-3.5 h-3.5 text-[#C1272D] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </a>
+                </div>
+
+                <!-- 4 Circular Badges (Goldberger Row) -->
+                <div class="grid grid-cols-4 gap-3 sm:gap-6 font-bold pt-3 border-t border-white/10">
                     
                     <!-- 1. Dis-Pill Packing -->
-                    <div class="flex flex-col items-center justify-center gap-2.5">
-                        <div class="rounded-full bg-white p-4 sm:p-5 shadow-lg text-[#C1272D] hover:scale-110 transition">
-                            <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    <a href="{{ route('services') }}#dis-pill" class="flex flex-col items-center justify-center gap-2 group text-center">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#C1272D] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                         </div>
-                        <h4 class="mt-auto text-xs sm:text-sm text-white font-semibold">Dis-Pill Packing</h4>
-                    </div>
+                        <h4 class="text-[11px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition">Dis-Pill Packing</h4>
+                    </a>
 
                     <!-- 2. Prescription -->
-                    <div class="flex flex-col items-center justify-center gap-2.5">
-                        <div class="rounded-full bg-white p-4 sm:p-5 shadow-lg text-[#1A4FA0] hover:scale-110 transition">
-                            <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                    <a href="{{ route('transfer') }}" class="flex flex-col items-center justify-center gap-2 group text-center">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-[#1A4FA0] group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
                         </div>
-                        <h4 class="mt-auto text-xs sm:text-sm text-white font-semibold">Prescriptions</h4>
-                    </div>
+                        <h4 class="text-[11px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition">Prescriptions</h4>
+                    </a>
 
                     <!-- 3. Walk-In Vaccines -->
-                    <div class="flex flex-col items-center justify-center gap-2.5">
-                        <div class="rounded-full bg-white p-4 sm:p-5 shadow-lg text-emerald-600 hover:scale-110 transition">
-                            <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
+                    <a href="{{ route('vaccinations') }}" class="flex flex-col items-center justify-center gap-2 group text-center">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-emerald-600 group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
                         </div>
-                        <h4 class="mt-auto text-xs sm:text-sm text-white font-semibold">Walk-In Vaccines</h4>
-                    </div>
+                        <h4 class="text-[11px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition">Walk-In Vaccines</h4>
+                    </a>
 
                     <!-- 4. Fast Delivery -->
-                    <div class="flex flex-col items-center justify-center gap-2.5">
-                        <div class="rounded-full bg-white p-4 sm:p-5 shadow-lg text-amber-500 hover:scale-110 transition">
-                            <svg class="w-6 h-6 sm:w-8 sm:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
+                    <a href="{{ route('services') }}#delivery" class="flex flex-col items-center justify-center gap-2 group text-center">
+                        <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-white shadow-lg flex items-center justify-center text-amber-500 group-hover:scale-110 group-hover:bg-[#E8F0FE] transition duration-300">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
                         </div>
-                        <h4 class="mt-auto text-xs sm:text-sm text-white font-semibold">Fast Delivery</h4>
-                    </div>
+                        <h4 class="text-[11px] sm:text-xs text-white font-semibold leading-tight group-hover:text-amber-200 transition">Free Delivery</h4>
+                    </a>
 
                 </div>
 
             </div>
         </section>
 
+        <!-- Right: Desktop Floating Social Proof Badges (High Visibility over Pharmacy Photo) -->
+        <div class="hidden xl:flex flex-col gap-4 pb-48 z-10 max-w-sm">
+            
+            <!-- Google Review Card -->
+            <div class="flex items-center gap-3.5 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/40 text-[#0B2F5C]">
+                <div class="w-11 h-11 rounded-xl bg-amber-50 text-amber-500 flex items-center justify-center shrink-0 font-extrabold text-lg shadow-sm">
+                    ★
+                </div>
+                <div>
+                    <div class="flex items-center gap-1.5 font-extrabold text-sm text-[#0B2F5C]">
+                        <span>4.5 Google Rating</span>
+                        <span class="text-xs text-slate-500 font-normal">(39 Reviews)</span>
+                    </div>
+                    <p class="text-xs text-slate-600">Highbridge Bronx Community Favorite</p>
+                </div>
+            </div>
+
+            <!-- Walk-In Vaccines Status Card -->
+            <div class="flex items-center gap-3.5 bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-2xl border border-white/40 text-[#0B2F5C]">
+                <div class="w-11 h-11 rounded-xl bg-emerald-50 text-emerald-600 flex items-center justify-center shrink-0 shadow-sm font-bold text-lg">
+                    ✓
+                </div>
+                <div>
+                    <div class="flex items-center gap-1.5">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                        <span class="font-extrabold text-sm text-[#0B2F5C]">Walk-Ins Welcome Today</span>
+                    </div>
+                    <p class="text-xs text-slate-600">Flu, COVID-19 &amp; Adult Vaccines &bull; No Appt</p>
+                </div>
+            </div>
+
+            <!-- Location Badge -->
+            <div class="flex items-center gap-3.5 bg-[#071E3C]/90 backdrop-blur-md rounded-2xl p-3.5 shadow-2xl border border-white/10 text-white">
+                <div class="w-9 h-9 rounded-xl bg-white/10 text-[#C1272D] flex items-center justify-center shrink-0">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                </div>
+                <div class="text-xs">
+                    <strong class="block text-white font-bold">1018 Ogden Ave, Bronx NY</strong>
+                    <span class="text-slate-300">Open 7 Days &bull; Highbridge Neighborhood</span>
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </div>
 
-<!-- 3-Box Floating Feature Strip (Demo Site Palette: Crimson #C1272D + Navy #0B2F5C + Deep Navy #071E3C) -->
-<div class="max-w-screen-xl mx-auto px-5 md:px-10 -mt-36 sm:-mt-44 flex flex-col lg:flex-row text-white mb-16 relative z-30 shadow-2xl">
+<!-- 3-Box Floating Feature Strip (Goldberger Exact Overlap: Crimson #C1272D + Primary Navy #0B2F5C + Deep Navy #071E3C) -->
+<div class="max-w-screen-xl mx-auto px-5 md:px-10 -mt-24 sm:-mt-32 lg:-mt-40 flex flex-col lg:flex-row text-white mb-12 relative z-30 shadow-2xl rounded-3xl overflow-hidden">
     
     <!-- Section 1: Crimson Red (Call Us At) -->
-    <section class="flex-1 flex items-start gap-4 bg-[#C1272D] px-6 sm:px-8 py-10 max-lg:rounded-t-2xl lg:rounded-l-2xl">
-        <div class="rounded-full bg-white/20 p-3 text-white shrink-0">
+    <section class="flex-1 flex items-start gap-4 bg-[#C1272D] px-6 sm:px-8 py-9 max-lg:rounded-t-3xl lg:rounded-l-3xl">
+        <div class="rounded-full bg-white/20 p-3 text-white shrink-0 shadow">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
         </div>
-        <div class="flex h-full flex-col justify-between gap-5">
-            <h3 class="text-xl font-bold tracking-tight">Call Us At</h3>
-            <p class="text-sm text-white/90 leading-relaxed">
-                For your convenience, speak directly with Pharmacist Kunal Shah and our pharmacy team. <b>We care about you!</b>
-            </p>
+        <div class="flex h-full flex-col justify-between gap-4">
+            <div>
+                <h3 class="text-xl font-bold tracking-tight">Call Us At</h3>
+                <p class="text-xs sm:text-sm text-white/90 leading-relaxed mt-1">
+                    Speak directly with Pharmacist Kunal Shah and our caring pharmacy team. English &amp; Español. <b>We care about you!</b>
+                </p>
+            </div>
             <a href="tel:7185388183" class="flex items-center gap-3 font-semibold group pt-1">
                 <div class="rounded-full bg-white p-2.5 text-[#C1272D] group-hover:scale-110 transition shadow">
                     <svg class="w-4 h-4 fill-current" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 4V3z"></path></svg>
                 </div>
-                <span class="text-xl font-bold text-white group-hover:underline">(718) 538-8183</span>
+                <span class="text-xl sm:text-2xl font-bold text-white group-hover:underline">(718) 538-8183</span>
             </a>
         </div>
     </section>
 
     <!-- Section 2: Primary Navy #0B2F5C (Transfer Your ℞ Today) -->
-    <section class="flex-1 flex items-start gap-4 bg-[#0B2F5C] px-6 sm:px-8 py-10">
-        <div class="rounded-full bg-white/20 p-3 text-white shrink-0">
+    <section class="flex-1 flex items-start gap-4 bg-[#0B2F5C] px-6 sm:px-8 py-9">
+        <div class="rounded-full bg-white/20 p-3 text-white shrink-0 shadow">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
         </div>
-        <div class="flex h-full flex-col justify-between gap-5">
-            <h3 class="text-xl font-bold tracking-tight">Transfer Your ℞ Today</h3>
-            <p class="text-sm text-slate-200 leading-relaxed">
-                Just fill out the simple form, and we'll ensure your medication is ready when you need it, with the option for pickup or free delivery. <b>We care about you!</b>
-            </p>
-            <a href="{{ route('transfer') }}" class="flex w-fit items-center gap-2.5 rounded-full border border-white/25 px-5 py-2.5 text-xs font-semibold text-white hover:bg-white hover:text-[#0B2F5C] transition">
+        <div class="flex h-full flex-col justify-between gap-4">
+            <div>
+                <h3 class="text-xl font-bold tracking-tight">Transfer Your ℞ Today</h3>
+                <p class="text-xs sm:text-sm text-slate-200 leading-relaxed mt-1">
+                    Just fill out the simple form. We coordinate with your doctor and previous pharmacy. Pickup or free local delivery. <b>We care about you!</b>
+                </p>
+            </div>
+            <a href="{{ route('transfer') }}" class="flex w-fit items-center gap-2.5 rounded-full bg-white text-[#0B2F5C] hover:bg-slate-100 px-5 py-2.5 text-xs font-bold shadow transition">
                 <span>Transfer ℞ now</span>
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                <svg class="w-3.5 h-3.5 text-[#C1272D]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
             </a>
         </div>
     </section>
 
     <!-- Section 3: Deep Navy #071E3C (Opening Hours) -->
-    <section class="flex-1 flex items-start gap-4 bg-[#071E3C] px-6 sm:px-8 py-10 max-lg:rounded-b-2xl lg:rounded-r-2xl">
-        <div class="rounded-full bg-white/20 p-3 text-white shrink-0">
+    <section class="flex-1 flex items-start gap-4 bg-[#071E3C] px-6 sm:px-8 py-9 max-lg:rounded-b-3xl lg:rounded-r-3xl">
+        <div class="rounded-full bg-white/20 p-3 text-white shrink-0 shadow">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
         </div>
-        <div class="flex h-full flex-col justify-between gap-4 w-full">
-            <h3 class="text-xl font-bold tracking-tight">Opening Hours</h3>
+        <div class="flex h-full flex-col justify-between gap-3 w-full">
+            <h3 class="text-xl font-bold tracking-tight">Store Hours &amp; Walk-Ins</h3>
             <div class="space-y-1.5 text-xs text-slate-300 w-full">
                 <div class="flex justify-between border-b border-white/10 pb-1">
                     <p class="font-medium text-slate-300">Monday &ndash; Friday</p>
@@ -133,13 +196,27 @@
                     <p class="text-white font-bold">10:00 am &ndash; 03:00 pm</p>
                 </div>
                 <div class="flex justify-between text-amber-300 font-semibold pt-0.5">
-                    <p>Walk-in Vaccines</p>
+                    <p>Walk-In Vaccines</p>
                     <p>Mon&ndash;Fri 10am &ndash; 6pm</p>
                 </div>
             </div>
         </div>
     </section>
 
+</div>
+
+<!-- Insurance Accepted Trust Strip (Seamless Bridge into Section 2) -->
+<div class="max-w-screen-xl mx-auto px-5 md:px-10 mb-16">
+    <div class="bg-[#F8FAFC] border border-[#0B2F5C]/10 rounded-2xl py-4 px-6 text-center flex flex-wrap items-center justify-center gap-4 sm:gap-8 shadow-sm">
+        <span class="text-[11px] font-extrabold uppercase tracking-wider text-[#0B2F5C]">We Accept Most Insurance:</span>
+        <span class="text-xs font-bold text-slate-700 flex items-center gap-1.5"><span class="w-4 h-4 rounded bg-[#0B2F5C] text-white text-[9px] flex items-center justify-center">+</span> Medicaid</span>
+        <span class="text-xs font-bold text-[#C1272D]">♥ Aetna</span>
+        <span class="text-xs font-bold text-[#002677]">UnitedHealthcare</span>
+        <span class="text-xs font-bold text-[#0056A8] flex items-center gap-1"><span class="w-4 h-4 rounded bg-[#0056A8] text-white text-[9px] flex items-center justify-center">✚</span> BlueCross BlueShield</span>
+        <span class="text-xs font-bold text-[#6A4C9A]">EmblemHealth</span>
+        <span class="text-xs font-bold text-[#007AC2]">Cigna</span>
+        <span class="text-xs font-bold text-slate-500">&amp; Many More</span>
+    </div>
 </div>
 
 <!-- "Over Two Decades of Trust and Care" (Section 2 Layout with Real Consultation Image) -->
