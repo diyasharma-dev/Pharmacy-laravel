@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 90" fill="none">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B2F5C" />
+      <stop offset="100%" stop-color="#071E3C" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C1272D" />
+      <stop offset="100%" stop-color="#E0353B" />
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A4FA0" />
+      <stop offset="100%" stop-color="#007AC2" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#071E3C" flood-opacity="0.25" />
+    </filter>
+  </defs>
+
+  <!-- Left Icon Emblem -->
+  <g transform="translate(10, 8)" filter="url(#shadow)">
+    <!-- Shield / Rounded Pill Base -->
+    <rect width="74" height="74" rx="20" fill="url(#shieldGrad)" />
+    <rect x="1.5" y="1.5" width="71" height="71" rx="18.5" stroke="#ffffff" stroke-opacity="0.15" stroke-width="2" />
+    
+    <!-- Medical Cross with subtle depth -->
+    <rect x="33" y="15" width="8" height="22" rx="3" fill="url(#accentGrad)" />
+    <rect x="26" y="22" width="22" height="8" rx="3" fill="url(#accentGrad)" />
+    
+    <!-- Stylized Rx Text & Mortar Curve -->
+    <text x="37" y="60" text-anchor="middle" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="900" font-size="24" fill="#FFFFFF" letter-spacing="-0.5">Rx</text>
+    
+    <!-- Established Dot Indicator -->
+    <circle cx="58" cy="22" r="3" fill="#1A4FA0" />
+    <circle cx="58" cy="22" r="1.5" fill="#E8F0FE" />
+  </g>
+
+  <!-- Brand Typography -->
+  <g transform="translate(98, 14)">
+    <!-- Primary Name -->
+    <text x="0" y="30" font-family="'Plus Jakarta Sans', 'Inter', sans-serif" font-weight="800" font-size="25" fill="#0B2F5C" letter-spacing="-0.5">
+      R &amp; S <tspan fill="#C1272D">PIONEER</tspan>
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="1" y="49" font-family="'Inter', sans-serif" font-weight="700" font-size="12" fill="#1A4FA0" letter-spacing="3.8">
+      PHARMACY
+    </text>
+
+    <!-- Trust Tagline & Est. -->
+    <g transform="translate(1, 57)">
+      <rect width="180" height="15" rx="4" fill="#E8F0FE" />
+      <circle cx="8" cy="7.5" r="2.5" fill="#C1272D" />
+      <text x="16" y="11" font-family="'Inter', sans-serif" font-weight="600" font-size="8.5" fill="#0B2F5C" letter-spacing="0.5">
+        SERVING BRONX SINCE 2006 • 20 YEARS
+      </text>
+    </g>
+  </g>
+</svg>
