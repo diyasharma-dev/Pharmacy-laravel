@@ -253,6 +253,11 @@
                     </h3>
                 </div>
 
+                <!-- Clinical Immunization Photo -->
+                <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 group">
+                    <img src="{{ asset('images/vaccine-care.jpg') }}" alt="Clinical Immunization Tray and Record" class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+
                 <div class="space-y-4">
                     <div class="flex items-start gap-4 p-5 rounded-2xl bg-white border border-slate-200 shadow-sm">
                         <div class="w-9 h-9 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold shrink-0">

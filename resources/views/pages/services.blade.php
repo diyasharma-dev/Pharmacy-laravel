@@ -25,7 +25,7 @@
 <section class="py-16 lg:py-28 bg-white">
     <div class="max-w-screen-xl mx-auto px-5 sm:px-10 space-y-16 lg:space-y-20">
 
-        <!-- 1. Multi-Dose & Dis-Pill Packaging (Goldberger Card with Red Bottom Bar) -->
+        <!-- 1. Multi-Dose & Dis-Pill Packaging (Goldberger Card with Real Dis-Pill Photo) -->
         <div id="packaging" style="box-shadow: 6px 5px 60px 15px rgba(60,60,60,0.08)" class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center p-8 sm:p-14 rounded-3xl bg-white border border-slate-100">
             <div class="lg:col-span-7 space-y-5">
                 <div class="inline-flex items-center gap-2 bg-royal text-white text-xs font-bold px-3.5 py-1 rounded-full uppercase tracking-wider">
@@ -63,32 +63,34 @@
                 </div>
             </div>
 
-            <div class="lg:col-span-5 bg-[#F2F2F2] p-8 rounded-3xl border border-slate-200 shadow-sm space-y-5">
-                <div class="border-b border-slate-200 pb-3 flex justify-between items-center">
-                    <span class="font-extrabold text-slate-900 text-sm">Dis-Pill Color-Coded Grid</span>
+            <!-- Dis-Pill Image & Grid Display -->
+            <div class="lg:col-span-5 bg-[#F2F2F2] p-6 sm:p-8 rounded-3xl border border-slate-200 shadow-sm space-y-5">
+                <div class="rounded-2xl overflow-hidden shadow-md border border-slate-300 group">
+                    <img src="{{ asset('images/dispill-packaging.jpg') }}" alt="Dis-Pill Multi-Dose Medication Blister Packaging" class="w-full h-52 sm:h-60 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+
+                <div class="border-b border-slate-200 pb-2 flex justify-between items-center">
+                    <span class="font-extrabold text-slate-900 text-xs sm:text-sm">Color-Coded Weekly Schedule</span>
                     <span class="text-xs bg-emerald-100 text-emerald-800 font-bold px-2.5 py-0.5 rounded-full">Cold-Sealed</span>
                 </div>
-                <div class="grid grid-cols-4 gap-2.5 text-center text-xs">
-                    <div class="p-3 bg-amber-50 rounded-2xl border border-amber-200">
-                        <div class="font-bold text-amber-900">Morning</div>
-                        <div class="text-[10px] text-amber-700 mt-1">Yellow Slot</div>
+                <div class="grid grid-cols-4 gap-2 text-center text-xs">
+                    <div class="p-2.5 bg-blue-50 rounded-xl border border-blue-200">
+                        <div class="font-bold text-royal text-xs">Morning</div>
+                        <div class="text-[9px] text-blue-700 mt-0.5">Blue Pod</div>
                     </div>
-                    <div class="p-3 bg-blue-50 rounded-2xl border border-blue-200">
-                        <div class="font-bold text-royal">Noon</div>
-                        <div class="text-[10px] text-blue-700 mt-1">Blue Slot</div>
+                    <div class="p-2.5 bg-amber-50 rounded-xl border border-amber-200">
+                        <div class="font-bold text-amber-900 text-xs">Noon</div>
+                        <div class="text-[9px] text-amber-700 mt-0.5">Yellow Pod</div>
                     </div>
-                    <div class="p-3 bg-orange-50 rounded-2xl border border-orange-200">
-                        <div class="font-bold text-orange-900">Evening</div>
-                        <div class="text-[10px] text-orange-700 mt-1">Orange Slot</div>
+                    <div class="p-2.5 bg-orange-50 rounded-xl border border-orange-200">
+                        <div class="font-bold text-orange-900 text-xs">Evening</div>
+                        <div class="text-[9px] text-orange-700 mt-0.5">Orange Pod</div>
                     </div>
-                    <div class="p-3 bg-indigo-50 rounded-2xl border border-indigo-200">
-                        <div class="font-bold text-indigo-900">Bedtime</div>
-                        <div class="text-[10px] text-indigo-700 mt-1">Purple Slot</div>
+                    <div class="p-2.5 bg-purple-50 rounded-xl border border-purple-200">
+                        <div class="font-bold text-purple-900 text-xs">Bedtime</div>
+                        <div class="text-[9px] text-purple-700 mt-0.5">Purple Pod</div>
                     </div>
                 </div>
-                <p class="text-xs text-slate-500 italic pt-1 text-center">
-                    Prepared under sterile clinical conditions by Pharmacist Kunal Shah and our licensed technicians.
-                </p>
             </div>
         </div>
 
@@ -186,12 +188,12 @@
             </div>
         </div>
 
-        <!-- 4. Dedicated TOYS Section & Over-The-Counter Retail (Client's Special Highlight!) -->
-        <div id="retail" style="box-shadow: 6px 5px 60px 15px rgba(60,60,60,0.08)" class="p-8 sm:p-14 rounded-3xl bg-white border border-slate-100 space-y-7">
+        <!-- 4. Dedicated TOYS Section & Over-The-Counter Retail (Client's Special Highlight with Real Photo!) -->
+        <div id="retail" style="box-shadow: 6px 5px 60px 15px rgba(60,60,60,0.08)" class="p-8 sm:p-14 rounded-3xl bg-white border border-slate-100 space-y-8">
             <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-100 pb-6">
                 <div>
                     <span class="text-xs font-bold uppercase tracking-wider text-crimson bg-red-50 px-3.5 py-1 rounded-full">
-                        Neighborhood Favorite
+                        Neighborhood Family Favorite
                     </span>
                     <h2 class="text-2xl sm:text-4xl font-bold font-display text-slate-900 mt-2">
                         Dedicated TOY Aisle &amp; Complete Health Essentials
@@ -202,11 +204,23 @@
                 </span>
             </div>
 
-            <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Unlike sterile corporate pharmacy counters, R &amp; S Pioneer is a true family store! Kunal has built a <strong>massive, dedicated toy section</strong> right inside our pharmacy. Parents, grandparents, and kids love browsing our aisles for birthday gifts, holiday surprises, and educational toys.
-            </p>
+            <!-- Toy Department Photo + Copy Split -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-6 rounded-3xl overflow-hidden shadow-xl border border-slate-200 group">
+                    <img src="{{ asset('images/pharmacy-toy-aisle.jpg') }}" alt="R & S Pioneer Pharmacy Dedicated Toy and Game Aisle" class="w-full h-72 sm:h-80 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="lg:col-span-6 space-y-4">
+                    <h3 class="text-xl sm:text-2xl font-bold font-display text-navy">A True Bronx Family Pharmacy Experience</h3>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        Unlike sterile corporate pharmacy counters, R &amp; S Pioneer is a true family store! Kunal has built a <strong>massive, dedicated toy section</strong> right inside our pharmacy. Parents, grandparents, and kids love browsing our aisles for birthday gifts, holiday surprises, board games, and educational toys.
+                    </p>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                        From classic Hasbro board games (Monopoly, Scrabble, Catan) to plush teddy bears and children's activity sets, find joy while waiting for your prescriptions.
+                    </p>
+                </div>
+            </div>
 
-            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-center pt-2">
                 <div class="bg-[#F2F2F2] p-5 rounded-2xl border border-slate-200 space-y-1 hover:-translate-y-1 transition">
                     <div class="text-3xl">🧸</div>
                     <div class="font-bold text-slate-900 text-xs">Toys &amp; Games</div>

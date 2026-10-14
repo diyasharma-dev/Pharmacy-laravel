@@ -4,12 +4,12 @@
 @section('meta_description', "Established in 2006, R & S Pioneer Pharmacy has been serving the South Bronx community for 20 years. Walk-in vaccines, Dis-Pill blister packing, DMV eye exams, and free delivery.")
 
 @section('content')
-<!-- Hero Section (Goldberger's Exact Hero Layout: Atmospheric Background with Left Floating Card & 4 Circular Badges) -->
-<div class="relative flex min-h-[85vh] lg:min-h-[90vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" style="background-image: url('{{ asset('images/hero-bg.svg') }}');">
+<!-- Hero Section (Goldberger's Exact Hero Layout: Photographic Background with Left Elevated Gradient Box & 4 Circular Badges) -->
+<div class="relative flex min-h-[85vh] lg:min-h-[92vh] w-full bg-cover bg-center bg-no-repeat text-white overflow-hidden" style="background-image: linear-gradient(to right, rgba(7, 30, 60, 0.75), rgba(5, 21, 43, 0.65)), url('{{ asset('images/hero-bg.jpg') }}');">
     <div class="max-w-screen-xl mx-auto px-5 md:px-10 py-16 lg:py-24 mt-auto w-full pb-48 lg:pb-56">
         
         <!-- Goldberger Left Elevated Card -->
-        <section class="w-fit rounded-t-2xl bg-gradient-gray p-6 sm:p-10 lg:p-14 border-t border-l border-r border-white/10 shadow-2xl backdrop-blur-sm">
+        <section class="w-fit rounded-t-2xl bg-gradient-gray p-6 sm:p-10 lg:p-14 border-t border-l border-r border-white/10 shadow-2xl backdrop-blur-md">
             <div class="flex w-fit flex-col gap-6 max-w-2xl">
                 
                 <!-- 20-Year Milestone Pill Badge -->
@@ -95,7 +95,7 @@
         </div>
     </section>
 
-    <!-- Section 2: Dark Slate #3C3C3C (Refill Your ℞ Today) -->
+    <!-- Section 2: Dark Slate #3C3C3C (Transfer Your ℞ Today) -->
     <section class="flex-1 flex items-start gap-4 bg-[#3C3C3C] px-6 sm:px-8 py-10">
         <div class="rounded-full bg-white/20 p-3 text-white shrink-0">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path></svg>
@@ -142,7 +142,7 @@
 
 </div>
 
-<!-- "Over Two Decades of Trust and Care" (Goldberger's Exact Section 2 Layout) -->
+<!-- "Over Two Decades of Trust and Care" (Goldberger's Exact Section 2 Layout with Real Consultation Image) -->
 <section class="max-w-screen-xl mx-auto px-5 md:px-10 py-16 lg:py-24 w-full space-y-11 lg:min-h-[85vh]">
     <h2 class="whitespace-break-spaces text-2xl sm:text-4xl font-bold text-crimson leading-tight">
         R &amp; S Pioneer Pharmacy <br>
@@ -151,8 +151,8 @@
 
     <div class="relative flex w-full flex-col lg:flex-row gap-11 items-start">
         
-        <!-- Left Side Copy & Button: lg:w-[42%] -->
-        <div class="flex flex-col gap-6 lg:w-[42%]">
+        <!-- Left Side Copy, Image & Button -->
+        <div class="flex flex-col gap-6 lg:w-[45%]">
             <div class="flex items-start gap-4">
                 <div class="w-12 h-12 rounded-2xl bg-crimson text-white flex items-center justify-center shrink-0 shadow-md">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
@@ -162,15 +162,23 @@
                 </p>
             </div>
 
+            <!-- Goldberger Photo Placement -->
+            <div class="relative rounded-3xl overflow-hidden shadow-2xl border border-slate-200 group">
+                <img src="{{ asset('images/doctor-consultation.jpg') }}" alt="Pharmacy Consultation & Patient Care" class="w-full h-64 sm:h-72 object-cover group-hover:scale-105 transition duration-500">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-5">
+                    <span class="text-xs font-semibold text-white tracking-wide">Pharmacist On Duty &bull; Personalized Consultations</span>
+                </div>
+            </div>
+
             <div>
-                <a href="{{ route('services') }}" class="rounded-full bg-black font-medium text-white px-7 h-12 inline-flex items-center gap-2.5 text-sm hover:bg-slate-800 transition shadow hover:scale-105">
+                <a href="{{ route('services') }}" class="rounded-full bg-black font-semibold text-white px-7 h-12 inline-flex items-center gap-2.5 text-sm hover:bg-slate-800 transition shadow hover:scale-105">
                     <span>Our Services</span>
                     <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
                 </a>
             </div>
 
             <!-- Pharmacist Kunal Badge Box -->
-            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-3 mt-4">
+            <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm space-y-3 mt-1">
                 <div class="flex items-center gap-3">
                     <div class="w-11 h-11 rounded-full bg-navy text-white flex items-center justify-center font-bold text-sm">
                         Rx
@@ -186,8 +194,8 @@
             </div>
         </div>
 
-        <!-- Right Side Overlapping Gray Box: lg:w-[56%] bg-[#F2F2F2] -->
-        <div class="flex w-full flex-col gap-5 rounded-2xl bg-[#F2F2F2] px-8 sm:px-11 py-12 text-slate-700 lg:w-[56%] shadow-sm border border-slate-200">
+        <!-- Right Side Overlapping Gray Box: lg:w-[53%] bg-[#F2F2F2] -->
+        <div class="flex w-full flex-col gap-5 rounded-3xl bg-[#F2F2F2] px-8 sm:px-11 py-12 text-slate-700 lg:w-[53%] shadow-sm border border-slate-200">
             <p class="leading-relaxed text-sm sm:text-base">
                 For over 20 years, R &amp; S Pioneer Pharmacy has stood as a beacon of health and wellness in our Highbridge neighborhood. We pride ourselves on offering not just prescriptions, but a full spectrum of personalized services including medication management, Dis-Pill multi-dose packaging, walk-in vaccinations, DMV vision exams, and expert consultations.
             </p>
@@ -196,7 +204,7 @@
             </p>
 
             <!-- 3 Checkmark Bullet Points (Goldberger Format) -->
-            <div class="space-y-4 pt-2">
+            <div class="space-y-4 pt-3">
                 <div class="flex items-start gap-4">
                     <svg class="w-5 h-5 text-crimson shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                     <p class="text-sm"><b>Personalized Care:</b> Tailored healthcare solutions that prioritize each patient's unique medication schedule.</p>
@@ -230,9 +238,9 @@
         <section class="grid grid-cols-1 md:grid-cols-3 gap-7 w-full">
             
             <!-- Card 1: Fast Delivery -->
-            <div class="flex flex-col justify-between gap-4 rounded-2xl bg-white p-7 sm:p-9 shadow-lg border border-slate-100 hover:-translate-y-1.5 transition duration-300">
+            <div class="flex flex-col justify-between gap-4 rounded-3xl bg-white p-7 sm:p-9 shadow-lg border border-slate-100 hover:-translate-y-1.5 transition duration-300">
                 <div class="space-y-4">
-                    <div class="w-14 h-14 rounded-2xl bg-ice flex items-center justify-center text-royal">
+                    <div class="w-14 h-14 rounded-2xl bg-ice flex items-center justify-center text-royal shadow-sm">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0"></path></svg>
                     </div>
                     <div class="flex flex-col gap-2.5">
@@ -247,9 +255,9 @@
             </div>
 
             <!-- Card 2: Dis-Pill Packaging -->
-            <div class="flex flex-col justify-between gap-4 rounded-2xl bg-white p-7 sm:p-9 shadow-lg border border-slate-100 hover:-translate-y-1.5 transition duration-300">
+            <div class="flex flex-col justify-between gap-4 rounded-3xl bg-white p-7 sm:p-9 shadow-lg border border-slate-100 hover:-translate-y-1.5 transition duration-300">
                 <div class="space-y-4">
-                    <div class="w-14 h-14 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-700">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-50 flex items-center justify-center text-amber-700 shadow-sm">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
                     </div>
                     <div class="flex flex-col gap-2.5">
@@ -264,9 +272,9 @@
             </div>
 
             <!-- Card 3: Vision Test for NY DMV -->
-            <div class="flex flex-col justify-between gap-4 rounded-2xl bg-white p-7 sm:p-9 shadow-lg border border-slate-100 hover:-translate-y-1.5 transition duration-300">
+            <div class="flex flex-col justify-between gap-4 rounded-3xl bg-white p-7 sm:p-9 shadow-lg border border-slate-100 hover:-translate-y-1.5 transition duration-300">
                 <div class="space-y-4">
-                    <div class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-navy">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-50 flex items-center justify-center text-navy shadow-sm">
                         <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path></svg>
                     </div>
                     <div class="flex flex-col gap-2.5">
@@ -285,7 +293,7 @@
     </div>
 </div>
 
-<!-- "Refill & Transfer Your ℞ Today — It's Quick and Easy" (Goldberger's Exact Black Section) -->
+<!-- "Refill & Transfer Your ℞ Today — It's Quick and Easy" (Goldberger's Exact Black Section with Real Photography) -->
 <div class="flex w-full bg-black py-16 lg:py-28 text-white">
     <div class="max-w-screen-xl mx-auto px-5 sm:px-10 my-auto flex w-full flex-col gap-14">
         
@@ -298,22 +306,9 @@
 
         <section class="flex flex-col lg:flex-row items-center gap-14">
             
-            <!-- Left Side Card Graphic -->
-            <div class="w-full lg:w-1/2 bg-gradient-to-br from-navy via-navy-light to-navy p-8 sm:p-12 rounded-3xl border border-white/10 shadow-2xl space-y-6">
-                <div class="w-16 h-16 rounded-2xl bg-crimson text-white flex items-center justify-center font-bold text-2xl shadow">
-                    ℞
-                </div>
-                <h3 class="text-2xl font-bold text-white font-display">
-                    Transferring Prescriptions is 100% Free &amp; Seamless
-                </h3>
-                <p class="text-slate-300 text-sm leading-relaxed">
-                    You don't need to visit your previous pharmacy or wait on long phone hold times. Fill out our simple transfer form, and our licensed pharmacists take care of all doctor approvals and insurance verifications.
-                </p>
-                <div class="pt-2 border-t border-white/10 text-xs text-amber-300 font-semibold space-y-1.5">
-                    <div>✓ We contact your previous pharmacy directly</div>
-                    <div>✓ Free local delivery right to your door</div>
-                    <div>✓ 100% Medicaid, Medicare Part D &amp; major insurance accepted</div>
-                </div>
+            <!-- Left Side Real Photography (Matching Goldberger's Image) -->
+            <div class="w-full lg:w-1/2 rounded-3xl overflow-hidden shadow-2xl border border-white/10 group">
+                <img src="{{ asset('images/refill-your-rx.jpg') }}" alt="Prescription Medicine Bottles and Notes" class="w-full h-80 sm:h-96 object-cover group-hover:scale-105 transition duration-500">
             </div>
 
             <!-- Right Side Copy & Pill Button (Goldberger's Exact Text Format) -->
@@ -463,7 +458,7 @@
     </div>
 </div>
 
-<!-- "Welcome to a Better Pharmacy Experience — Effortless Prescription Transfers" (Goldberger's Final Action Section) -->
+<!-- "Welcome to a Better Pharmacy Experience — Effortless Prescription Transfers" (Goldberger's Final Action Section with Delivery Image + Map) -->
 <div class="flex w-full bg-white py-16 lg:py-28 text-black">
     <div class="max-w-screen-xl mx-auto px-5 sm:px-10 my-auto flex w-full flex-col gap-14 text-black">
         
@@ -495,27 +490,35 @@
                 </a>
             </div>
 
-            <!-- Right Interactive Map / Location Preview -->
-            <div class="lg:w-1/2 w-full bg-[#F2F2F2] p-6 rounded-3xl border border-slate-200 shadow-sm space-y-4">
-                <div class="flex items-center justify-between">
-                    <div>
-                        <h4 class="font-bold text-navy text-base">Visit R &amp; S Pioneer Pharmacy</h4>
-                        <p class="text-xs text-slate-500">1018 Ogden Ave, Bronx NY 10452 &bull; Highbridge</p>
-                    </div>
-                    <a href="https://www.google.com/maps?q=1018+Ogden+Ave+Bronx+NY+10452" target="_blank" rel="noopener" class="text-xs text-crimson font-bold hover:underline">
-                        Directions &rarr;
-                    </a>
+            <!-- Right: Delivery Photo & Interactive Map -->
+            <div class="lg:w-1/2 w-full space-y-6">
+                <!-- Delivery Bag Photo -->
+                <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 group">
+                    <img src="{{ asset('images/rx-delivery.jpg') }}" alt="Free Neighborhood Prescription Delivery" class="w-full h-56 sm:h-64 object-cover group-hover:scale-105 transition duration-500">
                 </div>
-                <div class="rounded-2xl overflow-hidden h-72 border border-slate-200">
-                    <iframe 
-                        title="R & S Pioneer Pharmacy Location Map"
-                        src="https://maps.google.com/maps?q=1018+Ogden+Ave,+Bronx,+NY+10452&t=&z=15&ie=UTF8&iwloc=&output=embed" 
-                        width="100%" 
-                        height="100%" 
-                        class="w-full h-full border-0" 
-                        allowfullscreen="" 
-                        loading="lazy">
-                    </iframe>
+
+                <!-- Store Location Map Card -->
+                <div class="bg-[#F2F2F2] p-6 rounded-3xl border border-slate-200 shadow-sm space-y-4">
+                    <div class="flex items-center justify-between">
+                        <div>
+                            <h4 class="font-bold text-navy text-base">Visit R &amp; S Pioneer Pharmacy</h4>
+                            <p class="text-xs text-slate-500">1018 Ogden Ave, Bronx NY 10452 &bull; Highbridge</p>
+                        </div>
+                        <a href="https://www.google.com/maps?q=1018+Ogden+Ave+Bronx+NY+10452" target="_blank" rel="noopener" class="text-xs text-crimson font-bold hover:underline">
+                            Directions &rarr;
+                        </a>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden h-60 border border-slate-200">
+                        <iframe 
+                            title="R & S Pioneer Pharmacy Location Map"
+                            src="https://maps.google.com/maps?q=1018+Ogden+Ave,+Bronx,+NY+10452&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="100%" 
+                            class="w-full h-full border-0" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
                 </div>
             </div>
 

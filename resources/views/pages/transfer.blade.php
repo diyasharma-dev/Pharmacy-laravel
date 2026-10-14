@@ -195,6 +195,11 @@
             <!-- Right: Why Transfer to Us & Quick Call Box -->
             <div class="lg:col-span-4 space-y-6">
                 
+                <!-- Medication Image Card -->
+                <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 group">
+                    <img src="{{ asset('images/refill-your-rx.jpg') }}" alt="Prescription Medication Refill" class="w-full h-52 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+
                 <!-- Quick Phone Callout Card (Goldberger Dark Container) -->
                 <div class="bg-gradient-gray text-white rounded-3xl p-8 space-y-5 shadow-2xl border border-white/10">
                     <span class="inline-block bg-crimson text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full">

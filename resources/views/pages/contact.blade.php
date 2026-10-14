@@ -117,6 +117,11 @@
                     </a>
                 </div>
 
+                <!-- Store Photo Card -->
+                <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 group">
+                    <img src="{{ asset('images/hero-bg.jpg') }}" alt="R & S Pioneer Pharmacy Store Interior" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+
             </div>
 
             <!-- Right: Contact Inquiry Form & Map -->

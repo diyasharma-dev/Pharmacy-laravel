@@ -139,7 +139,10 @@
                 </div>
             </div>
 
-            <div class="space-y-5 text-slate-600 leading-relaxed text-base">
+                <div class="rounded-3xl overflow-hidden shadow-xl border border-slate-200 group my-4">
+                    <img src="{{ asset('images/doctor-consultation.jpg') }}" alt="Pharmacist Consultation and Clinical Care" class="w-full h-64 sm:h-72 object-cover group-hover:scale-105 transition duration-500">
+                </div>
+
                 <p>
                     Kunal Shah earned his pharmacy degree from <strong>St. John's University College of Pharmacy</strong>, one of New York's premier pharmaceutical institutions. For over two decades, Kunal has dedicated his career to community-based clinical pharmacy in the South Bronx.
                 </p>
