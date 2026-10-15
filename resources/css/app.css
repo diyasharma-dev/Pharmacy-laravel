@@ -54,4 +54,23 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+body {
+    overflow-x: hidden;
+    max-width: 100vw;
+    -webkit-tap-highlight-color: transparent;
+}
+
+img, svg, video, canvas, audio, iframe, embed, object {
+    display: block;
+    max-width: 100%;
+}
+
+/* Ensure long words, emails or URLs wrap gracefully on mobile */
+.break-words-safe {
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
