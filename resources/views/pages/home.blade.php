@@ -4,18 +4,52 @@
 @section('meta_description', "Established in 2006, R & S Pioneer Pharmacy has been serving the South Bronx community for 20 years. Walk-in vaccines, Dis-Pill blister packing, DMV eye exams, and personal care.")
 
 @section('content')
-<!-- BANNER 1 — LEGACY & COMMUNITY TRUST (Hero Section) -->
-<div class="hero-desktop-bg relative flex flex-col lg:flex-row lg:min-h-[620px] w-full bg-gradient-to-b from-[#071E3C] via-[#0B2F5C] to-[#07254E] lg:bg-[#00175D] text-white overflow-hidden" 
-     style="--hero-bg: linear-gradient(to right, rgba(11, 47, 92, 0.45) 0%, rgba(11, 47, 92, 0.20) 50%, rgba(7, 30, 60, 0.10) 100%), url('{{ asset('images/home-hero-banner.jpg') }}'); --hero-bg-pos: right center;">
+<!-- HERO CAROUSEL BANNER SECTION -->
+<div id="hero-carousel-container" class="relative flex flex-col lg:flex-row lg:min-h-[620px] w-full bg-gradient-to-b from-[#071E3C] via-[#0B2F5C] to-[#07254E] lg:bg-[#00175D] text-white overflow-hidden">
 
-    <!-- Mobile & Tablet Unobstructed Hero Banner Visual (< lg) -->
-    <div class="lg:hidden relative w-full aspect-[16/10] sm:aspect-[2/1] md:aspect-[2.35/1] bg-[#00175D] overflow-hidden shrink-0">
-        <img src="{{ asset('images/home-hero-banner.jpg') }}"
-             alt="R & S Pioneer Pharmacy Storefront in Highbridge, South Bronx"
-             class="w-full h-full object-cover object-right"
-             loading="eager"
-             fetchpriority="high">
-        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-8 sm:h-10 bg-gradient-to-t from-[#071E3C] via-[#071E3C]/30 to-transparent"></div>
+    <!-- Desktop Carousel Background Slides (>= lg) -->
+    <div class="hidden lg:block absolute inset-0 w-full h-full overflow-hidden pointer-events-none z-0">
+        <!-- Slide 1: Storefront with Yankee Stadium -->
+        <div class="hero-slide-desktop absolute inset-0 w-full h-full bg-cover bg-no-repeat transition-opacity duration-1000 ease-in-out opacity-100"
+             style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.52) 0%, rgba(11, 47, 92, 0.25) 50%, rgba(7, 30, 60, 0.10) 100%), url('{{ asset('images/home-hero-slide-1.jpg') }}'); background-position: right center;">
+        </div>
+        
+        <!-- Slide 2: Yankee Stadium Landmark -->
+        <div class="hero-slide-desktop absolute inset-0 w-full h-full bg-cover bg-no-repeat transition-opacity duration-1000 ease-in-out opacity-0"
+             style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.40) 0%, rgba(11, 47, 92, 0.15) 45%, rgba(7, 30, 60, 0.05) 100%), url('{{ asset('images/home-hero-slide-2.jpg') }}'); background-position: right center;">
+        </div>
+        
+        <!-- Slide 3: Pharmacy Interior / Community Healthcare -->
+        <div class="hero-slide-desktop absolute inset-0 w-full h-full bg-cover bg-no-repeat transition-opacity duration-1000 ease-in-out opacity-0"
+             style="background-image: linear-gradient(to right, rgba(11, 47, 92, 0.52) 0%, rgba(11, 47, 92, 0.25) 50%, rgba(7, 30, 60, 0.10) 100%), url('{{ asset('images/home-hero-slide-3.jpg') }}'); background-position: center right;">
+        </div>
+    </div>
+
+    <!-- Mobile & Tablet Unobstructed Hero Banner Visual Carousel (< lg) -->
+    <div id="hero-mobile-carousel" class="lg:hidden relative w-full aspect-[16/10] sm:aspect-[2/1] md:aspect-[2.35/1] bg-[#00175D] overflow-hidden shrink-0 select-none">
+        <!-- Slide 1 -->
+        <div class="hero-slide-mobile absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out opacity-100">
+            <img src="{{ asset('images/home-hero-slide-1.jpg') }}"
+                 alt="R & S Pioneer Pharmacy Storefront with Yankee Stadium"
+                 class="w-full h-full object-cover object-right"
+                 loading="eager"
+                 fetchpriority="high">
+        </div>
+        <!-- Slide 2 -->
+        <div class="hero-slide-mobile absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none">
+            <img src="{{ asset('images/home-hero-slide-2.jpg') }}"
+                 alt="Yankee Stadium Landmark Near R & S Pioneer Pharmacy"
+                 class="w-full h-full object-cover object-right"
+                 loading="lazy">
+        </div>
+        <!-- Slide 3 -->
+        <div class="hero-slide-mobile absolute inset-0 w-full h-full transition-opacity duration-700 ease-in-out opacity-0 pointer-events-none">
+            <img src="{{ asset('images/home-hero-slide-3.jpg') }}"
+                 alt="R & S Pioneer Pharmacy South Bronx Community Healthcare"
+                 class="w-full h-full object-cover object-center"
+                 loading="lazy">
+        </div>
+        <div class="pointer-events-none absolute inset-x-0 bottom-0 h-8 sm:h-10 bg-gradient-to-t from-[#071E3C] via-[#071E3C]/30 to-transparent z-10"></div>
     </div>
     
     <div class="max-w-screen-xl mx-auto px-0 lg:px-10 pt-0 lg:pt-10 lg:mt-auto w-full flex flex-col lg:flex-row items-end justify-between gap-6 xl:gap-10 relative z-10 !pb-0">
@@ -641,4 +675,106 @@
 
     </div>
 </div>
+
+<!-- Home Hero Banner Carousel Auto-Scroll Script -->
+<script>
+    (function () {
+        let currentHeroSlide = 0;
+        const totalHeroSlides = 3;
+        let heroTimer = null;
+        const autoPlayInterval = 4000;
+
+        function updateSlide(index) {
+            currentHeroSlide = (index + totalHeroSlides) % totalHeroSlides;
+
+            // 1. Update Desktop Slides
+            const desktopSlides = document.querySelectorAll('.hero-slide-desktop');
+            desktopSlides.forEach((slide, i) => {
+                if (i === currentHeroSlide) {
+                    slide.classList.remove('opacity-0', 'pointer-events-none');
+                    slide.classList.add('opacity-100');
+                } else {
+                    slide.classList.remove('opacity-100');
+                    slide.classList.add('opacity-0', 'pointer-events-none');
+                }
+            });
+
+            // 2. Update Mobile Slides
+            const mobileSlides = document.querySelectorAll('.hero-slide-mobile');
+            mobileSlides.forEach((slide, i) => {
+                if (i === currentHeroSlide) {
+                    slide.classList.remove('opacity-0', 'pointer-events-none');
+                    slide.classList.add('opacity-100');
+                } else {
+                    slide.classList.remove('opacity-100');
+                    slide.classList.add('opacity-0', 'pointer-events-none');
+                }
+            });
+        }
+
+        window.heroCarouselNext = function () {
+            updateSlide(currentHeroSlide + 1);
+            restartTimer();
+        };
+
+        window.heroCarouselPrev = function () {
+            updateSlide(currentHeroSlide - 1);
+            restartTimer();
+        };
+
+        function startTimer() {
+            stopTimer();
+            heroTimer = setInterval(function () {
+                updateSlide(currentHeroSlide + 1);
+            }, autoPlayInterval);
+        }
+
+        function stopTimer() {
+            if (heroTimer) {
+                clearInterval(heroTimer);
+                heroTimer = null;
+            }
+        }
+
+        function restartTimer() {
+            startTimer();
+        }
+
+        // Pause only when browser tab is inactive to save resources
+        document.addEventListener('visibilitychange', function () {
+            if (document.hidden) {
+                stopTimer();
+            } else {
+                startTimer();
+            }
+        });
+
+        // Touch Swipe Support for Mobile
+        const mobileContainer = document.getElementById('hero-mobile-carousel');
+        if (mobileContainer) {
+            let startTouchX = 0;
+            let startTouchY = 0;
+
+            mobileContainer.addEventListener('touchstart', function (e) {
+                startTouchX = e.changedTouches[0].clientX;
+                startTouchY = e.changedTouches[0].clientY;
+            }, { passive: true });
+
+            mobileContainer.addEventListener('touchend', function (e) {
+                const diffX = e.changedTouches[0].clientX - startTouchX;
+                const diffY = e.changedTouches[0].clientY - startTouchY;
+                if (Math.abs(diffX) > 40 && Math.abs(diffX) > Math.abs(diffY)) {
+                    if (diffX < 0) {
+                        window.heroCarouselNext();
+                    } else {
+                        window.heroCarouselPrev();
+                    }
+                }
+            }, { passive: true });
+        }
+
+        // Initialize continuous auto-scroll
+        startTimer();
+    })();
+</script>
 @endsection
